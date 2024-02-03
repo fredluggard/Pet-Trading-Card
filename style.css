@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Arvo", serif;
+}
+.card {
+  width: 450px;
+  height: 600px;
+  border: 10px solid #8fe230;
+  border-radius: 15px;
+  background-color: #efea00;
+}
+.up-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+}
+.cover-img {
+  clip-path: polygon(50% 0%, 100% 9%, 100% 89%, 50% 100%, 0 89%, 0 11%);
+  height: 280px;
+  width: 500px;
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+
+.img {
+  clip-path: polygon(50% 0%, 100% 9%, 100% 89%, 50% 100%, 0 89%, 0 11%);
+  height: 280px;
+  width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  object-fit: cover;
+  object-position: top;
+  height: 90%;
+  width: 100%;
+  clip-path: polygon(50% 0%, 100% 9%, 100% 89%, 50% 100%, 0 89%, 0 11%);
+}
+.push {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #8fe230;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middle {
+  height: 100px;
+  width: 100%;
+  background-color: #734826;
+  position: relative;
+  top: -20px;
+  color: white;
+  position: relative;
+}
+.middle .right {
+  position: relative;
+  top: 30px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.down-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  color: #734826;
+}
+.top-attribute {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.first-attribute p {
+  font-size: 14px;
+}
+.first-attribute h2 {
+  font-size: 18px;
+}
+.second-attribute p {
+  font-size: 14px;
+}
+.second-attribute h2 {
+  font-size: 18px;
+}
+
+.down-attribute {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.third-attribute p {
+  font-size: 14px;
+}
+.third-attribute h2 {
+  font-size: 18px;
+}
+.fourth-attribute p {
+  font-size: 14px;
+}
+.fourth-attribute h2 {
+  font-size: 18px;
+}
+
+.mvp {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+}
+.mvp h1 {
+  font-size: 100px;
+  color: #734826;
+  opacity: 0.2;
+  text-align: center;
+  letter-spacing: 40px;
+}
